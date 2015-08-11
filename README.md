@@ -10,6 +10,7 @@ docker run --name apache -v /var/www:/var/www -p 80:80 -p 443:443 eagos/armhf-ap
 The following is an example of a systemd service.
 <br/>
 <code>
+```
 [Unit]
 Description=Docker apache server.
 After=docker.service
@@ -22,4 +23,5 @@ TimeoutSec=20
 
 [Install]
 WantedBy=multi-user.target
+```
 </code>
